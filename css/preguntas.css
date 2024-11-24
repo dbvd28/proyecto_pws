@@ -27,7 +27,7 @@ margin: 0px;
 .side_question_box{
     margin: 0px;
     width: 100vw;
-    height: 90vh;
+    height: 50vh;
 }
 .side_question_box ul{
     display:flex;
@@ -57,4 +57,97 @@ margin: 0px;
     margin: 0px;
     padding: 0px;
     justify-content: center center;
+}
+.Mas_soporte{
+    margin: 1rem;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+ 
+}
+.Mas_soporte .left_soporte{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.Mas_soporte .left_soporte img{
+    margin: 0px;
+    padding: 0px;
+    width:fit-content;
+    height: 20vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border-color: black;
+    box-shadow: 3px 3px 5px #000;
+}
+
+
+.Mas_soporte .right_soporte{
+    margin: 0px;
+    padding: 0px;
+    width: 90vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    object-position: left;
+}
+.Mas_soporte .right_soporte .whatsapp{
+    margin: 1rem;
+    padding: 0px;
+   width: 100px;
+   height: 24px;
+   display: flex;
+   display: row;
+   border-radius: 17px;
+    box-shadow: 3px 3px 5px #000;
+}
+.Mas_soporte .right_soporte .whatsapp img{
+    margin: 0px;
+    padding: 0px;
+    width:50;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-color: black;
+}
+.Mas_soporte .right_soporte .whatsapp p{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    font-size: 10px;
+    top:75%;
+    transform: translateY(-50%);
+  
+}
+.Mas_soporte .right_soporte .instagram{
+    margin: 1rem;
+    padding: 0px;
+       display: flex;
+   display: row;
+    width: 100px;
+    height: 24px;
+    border-radius: 17px;
+    box-shadow: 3px 3px 5px #000;
+}
+.Mas_soporte .right_soporte .instagram img{
+    margin: 0px;
+    padding: 0px;
+    width:50;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-color: black;
+}
+
+.Mas_soporte .right_soporte .instagram p{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    font-size: 10px;
+    top:75%;
+    left:10%;
+    transform: translateY(-50%);
+  
 }
