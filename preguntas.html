@@ -6,6 +6,10 @@
     <title>Preguntas frecuentes</title>
     <link rel="stylesheet" href="css/preguntas.css" />
     <script src="js/preguntas.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </header>
   <body>
     <header>
@@ -14,77 +18,93 @@
       </ul>
     </header>
     <main>
-      <div class="side_question_box">
-        <ul class="preguntas" style="display: block">
-          <li id="pregunta_uno">
-            <button
-              class="info_button"
-              data-target="info_1"
-              onclick="pregunta_active()"
-            >
-              Pregunta 1
-            </button>
-            <div id="info_1" class="contenido_pregunta">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                at repudiandae nemo neque id non tempora corrupti et, explicabo
-                qui, animi accusantium similique, distinctio est sed voluptas
-                laborum voluptate. Distinctio?
-              </p>
-            </div>
-          </li>
-          <li id="pregunta_dos">
-            <button
-              class="info_button"
-              data-target="info_2"
-              onclick="pregunta_active()"
-            >
-              Pregunta 2
-            </button>
-            <div id="info_2" class="contenido_pregunta">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                quam tempore ducimus assumenda, quo necessitatibus rerum ea
-                dicta doloremque distinctio dolor corrupti repellendus error
-                deserunt repudiandae veritatis corporis provident nemo?
-              </p>
-            </div>
-          </li>
-          <li id="pregunta_tres">
-            <button
-              class="info_button"
-              data-target="info_3"
-              onclick="pregunta_active()"
-            >
-              Pregunta 3
-            </button>
-            <div id="info_3" class="contenido_pregunta">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                quam tempore ducimus assumenda, quo necessitatibus rerum ea
-                dicta doloremque distinctio dolor corrupti repellendus error
-                deserunt repudiandae veritatis corporis provident nemo?
-              </p>
-            </div>
-          </li>
-          <li id="pregunta_4" class="">
-            <button
-              class="info_button"
-              data-target="info_4"
-              onclick="pregunta_active()"
-            >
-              Pregunta 4
-            </button>
-            <div id="info_4" class="contenido_pregunta">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                quam tempore ducimus assumenda, quo necessitatibus rerum ea
-                dicta doloremque distinctio dolor corrupti repellendus error
-                deserunt repudiandae veritatis corporis provident nemo?
-              </p>
-            </div>
-          </li>
-        </ul>
+      <div class="main_questions">
+        <div class="search_bar">
+          <h5 class="title">Alguna pregunta</h5>
+          <input
+            type="text"
+            placeholder="Buscar pregunta"
+            class="search_question"
+          />
+          <button type="submit" class="search_button">
+            <i class="ri-search-line"></i>
+          </button>
+        </div>
+        <div class="question_box">
+          <ul class="preguntas" style="display: block">
+            <li id="pregunta_uno">
+              <button
+                class="info_button"
+                data-target="info_1"
+                onclick="pregunta_active()"
+              >
+                Pregunta 1
+              </button>
+              <div id="info_1" class="contenido_pregunta">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maiores at repudiandae nemo neque id non tempora corrupti et,
+                  explicabo qui, animi accusantium similique, distinctio est sed
+                  voluptas laborum voluptate. Distinctio?
+                </p>
+              </div>
+            </li>
+            <li id="pregunta_dos">
+              <button
+                class="info_button"
+                data-target="info_2"
+                onclick="pregunta_active()"
+              >
+                Pregunta 2
+              </button>
+              <div id="info_2" class="contenido_pregunta">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maiores quam tempore ducimus assumenda, quo necessitatibus
+                  rerum ea dicta doloremque distinctio dolor corrupti
+                  repellendus error deserunt repudiandae veritatis corporis
+                  provident nemo?
+                </p>
+              </div>
+            </li>
+            <li id="pregunta_tres">
+              <button
+                class="info_button"
+                data-target="info_3"
+                onclick="pregunta_active()"
+              >
+                Pregunta 3
+              </button>
+              <div id="info_3" class="contenido_pregunta">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maiores quam tempore ducimus assumenda, quo necessitatibus
+                  rerum ea dicta doloremque distinctio dolor corrupti
+                  repellendus error deserunt repudiandae veritatis corporis
+                  provident nemo?
+                </p>
+              </div>
+            </li>
+            <li id="pregunta_4" class="">
+              <button
+                class="info_button"
+                data-target="info_4"
+                onclick="pregunta_active()"
+              >
+                Pregunta 4
+              </button>
+              <div id="info_4" class="contenido_pregunta">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maiores quam tempore ducimus assumenda, quo necessitatibus
+                  rerum ea dicta doloremque distinctio dolor corrupti
+                  repellendus error deserunt repudiandae veritatis corporis
+                  provident nemo?
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="Mas_soporte">
         <div class="left_soporte">
@@ -95,11 +115,17 @@
         </div>
         <div class="right_soporte">
           <div class="whatsapp">
-            <img src="imagenes/whatsapp-logo-4456.png" alt="Imagen del logo de whatsapp" />
+            <img
+              src="imagenes/whatsapp-logo-4456.png"
+              alt="Imagen del logo de whatsapp"
+            />
             <p>+504 8917-4012</p>
           </div>
           <div class="instagram">
-            <img src="imagenes/instagram-logo-8869.png" alt="Imagen del logo de instagram" />
+            <img
+              src="imagenes/instagram-logo-8869.png"
+              alt="Imagen del logo de instagram"
+            />
             <p>cyd.hn</p>
           </div>
         </div>
