@@ -10,7 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = "index.html";
         } else if (query === "eventos" || query === "events") {
             window.location.href = "eventos.html";
-        } else {
+        }else if (query === "agendar cita" || query === "Agendar cita") {
+            window.location.href = "agendarcita.html";
+        } 
+        else {
             alert("Página no encontrada. Intente con 'Home' o 'Cómo Ayudar'.");
         }
     });

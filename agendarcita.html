@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita</title>
+    <link rel="stylesheet" href="css/agendarcita.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+          <img src="imagenes/Cyd WS Logo Transparente.png" alt="Logo C&D" class="logo">
+         </div>
+        <div class="search-container">
+          <input type="text" id="search-bar" placeholder="Buscar">
+          <button id="search-button">
+            <i class="fas fa-search"></i> 
+          </button>
+        </div>
+      </header>
+      <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="agendarcita.html">Agendar cita</a></li>
+                <li><a href="#">Nuestros programas</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="#">Comentarios</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <section class="cita">
+                <section class="headercita">
+                    <h1>Agendar Cita</h1>
+                </section>
+                    <form class="campos" method="get">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre"placeholder="Nombre">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" placeholder="Email">
+                    <label for="number">Telefono</label>
+                    <input type="tel" id="number" placeholder="Numero telefono">
+                    <label for="date">Elije una fecha</label>
+                    <input type="date" id="date" name="date" >
+                    <label for="time">Elije la hora</label>
+                    <select id="time" name="time">
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                        <option value="17:00">5:00 PM</option>
+                    </select>
+                    <label for="description">Motivo de la visita</label>
+                    <textarea name="description" id="description" placeholder="Indique el motivo de su visita"
+                    ></textarea>
+                    <div class="agendar">
+                        <button type="submit" id="appoint">Agendar</button>
+                    </div>
+                </form>
+            </section>        
+        </main>
+    </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+          <h3>Ayuda</h3>
+          <ul>
+              <li><a href="#">Preguntas Frecuentes</a></li>
+              <li><a href="#">Información para Envíos</a></li>
+          </ul>
+      </div>
+
+      <div class="footer-column">
+          <h3>Empresa</h3>
+          <ul>
+              <li><a href="#">Acerca de Nosotros</a></li>
+              <li><a href="trabajo.html">Trabaja con Nosotros</a></li>
+          </ul>
+      </div>
+
+      
+      <div class="footer-column">
+          <h3>Contáctenos</h3>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="imagenes/instalogo.jpg" alt="Instagram" class="social-icon-image">
+        </a>
+        <a href="https://wa.me/1234567890" target="_blank">
+            <img src="imagenes/whatsapplogo.jpg" alt="WhatsApp" class="social-icon-image">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="imagenes/facelogo.jpg" alt="Facebook" class="social-icon-image">
+        </a>  
+      </div>
+  </div>
+  </footer>
+</body>
+</html>
