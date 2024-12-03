@@ -49,26 +49,27 @@ body {
 }
 
 #search-button {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 4px;
-  background-color: white;
-  color: #0078d7;
-  font-weight: bold;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
-  font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: #0078d7;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    font-size: 16px; 
+
 }
 
 #search-button .fas {
-  font-size: 20px;
+    font-size: 20px; 
 }
 
 #search-button:hover {
-  background-color: #e6e6e6;
+    background-color: #e6e6e6;
 }
 
 .container {
