@@ -60,15 +60,16 @@
                   data-target="info_1"
                   onclick="pregunta_active()"
                 >
-                  Pregunta 1
+                  ¿Donde nos ubicamos?
                 </button>
                 <div id="info_1" class="contenido_pregunta">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maiores at repudiandae nemo neque id non tempora corrupti
-                    et, explicabo qui, animi accusantium similique, distinctio
-                    est sed voluptas laborum voluptate. Distinctio?
+                  <p id="resp_1" class="contenido_respuesta">
+                      Nos ubicamos en el boulevard morazan de Tegucigalpa, en la Torre Centro Morazan en el piso C4. 
+                      Si desea una visita personalizada, por favor, haga clic en el link que le dejamos a continuacion para que vea nuestra ubicacion en google maps.
                   </p>
+                  <a href="https://maps.app.goo.gl/D1jMDNJRh1v6nUte6" target="_blank" class="ubicacion">
+                    <i class="fas fa-map-marker-alt"></i> Ver en Google Maps
+                  </a>
                 </div>
               </li>
               <li id="pregunta_dos">
@@ -77,15 +78,17 @@
                   data-target="info_2"
                   onclick="pregunta_active()"
                 >
-                  Pregunta 2
+                 ¿Como agendar una cita?
                 </button>
                 <div id="info_2" class="contenido_pregunta">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maiores quam tempore ducimus assumenda, quo necessitatibus
-                    rerum ea dicta doloremque distinctio dolor corrupti
-                    repellendus error deserunt repudiandae veritatis corporis
-                    provident nemo?
+                  <p id="resp_2" class="contenido_respuesta2">
+                   <ol id="lista_cita">
+                    <li>Dirigete a seccion de <a href="agendarcita.html">agendar cita</a> en el menu de navegacion.</li>
+                    <li>Llena los campos que se solicitan</li>
+                    <li>Dar click en el boton de agendar</li>
+                    <li>¡Listo tu cita ha sido agendada.!</li>
+                   </ol>
+                   Cualquier duda porfavor escribenos a nuestro numero o si no contactanos a traves de nuestro instagram.
                   </p>
                 </div>
               </li>
@@ -95,34 +98,65 @@
                   data-target="info_3"
                   onclick="pregunta_active()"
                 >
-                  Pregunta 3
+                 ¿Como los puedo contactar?
                 </button>
                 <div id="info_3" class="contenido_pregunta">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maiores quam tempore ducimus assumenda, quo necessitatibus
-                    rerum ea dicta doloremque distinctio dolor corrupti
-                    repellendus error deserunt repudiandae veritatis corporis
-                    provident nemo?
+                  <p id="resp_3" class="contenido_respuesta3">
+                  Si necesitas contactarnos puedes hacerlo a traves de nuestras redes sociales.
+                  A continuacion te dejamos los links para que puedas contactarnos.
                   </p>
+                  <a href="https://www.instagram.com" target="_blank" class="social_icon_resp">
+                    <img
+                      src="imagenes/instalogo.jpg"
+                      alt="Instagram"
+                      class="social-icon-image_resp"
+                    />
+                  </a>
+                  <a href="https://wa.me/1234567890" target="_blank" class="social_icon_resp">
+                    <img
+                      src="imagenes/whatsapplogo.jpg"
+                      alt="WhatsApp"
+                      class="social-icon-image_resp"
+                    />
+                  </a>
                 </div>
               </li>
-              <li id="pregunta_4" class="">
+              <li id="pregunta_cuatro">
                 <button
                   class="info_button"
+                  id="boton_4"
                   data-target="info_4"
                   onclick="pregunta_active()"
                 >
-                  Pregunta 4
+                  ¿Que dias abren?
                 </button>
                 <div id="info_4" class="contenido_pregunta">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maiores quam tempore ducimus assumenda, quo necessitatibus
-                    rerum ea dicta doloremque distinctio dolor corrupti
-                    repellendus error deserunt repudiandae veritatis corporis
-                    provident nemo?
-                  </p>
+                   <ul class="semana">
+                    <li class="dia">
+                      <h3>Lunes</h3>
+                      <p class="horario">10:00 am a 4:30pm</p>
+                    </li>
+                    <li class="dia">
+                      <h3>Martes</h3>
+                      <p class="horario">10:00 am a 4:30pm</p>
+                    </li>
+                    <li class="dia">
+                      <h3>Miercoles</h3>
+                      <p class="horario">10:00 am a 4:30pm</p>
+                    </li>
+                    <li class="dia">
+                      <h3>Jueves</h3>
+                      <p class="horario">10:00 am a 4:30pm</p>
+                    </li>
+                    <li class="dia">
+                      <h3>Viernes</h3>
+                      <p class="horario">10:00 am a 4:30pm</p>
+                    </li>
+                    <li class="dia">
+                      <h3>Sabado</h3>
+                      <p class="horario">10:00 am a 4:30pm</p>
+                    </li>
+                   </ul>
                 </div>
               </li>
             </ul>
