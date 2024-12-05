@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>c&dHN</title>
+    <link rel="stylesheet" href="css/preguntas.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="js/preguntas.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <img
+          src="imagenes/Cyd WS Logo Transparente.png"
+          alt="Logo C&D"
+          class="logo"
+        />
+      </div>
+    </header>
+    <div class="container">
+      <nav class="sidebar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Catálogo</a></li>
+          <li><a href="agendarcita.html">Agendar cita</a></li>
+          <li><a href="eventos.html">Actividades</a></li>
+          <li><a href="#">Reseñas</a></li>
+          <li><a href="#">Acerca de Nosotros</a></li>
+          <li><a href="trabajo.html">Trabaja con nosotros</a></li>
+          <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+          <li><a href="contactanos.html">Contáctanos</a></li>
+          <li><a href="#">Ubicación</a></li>
+          
+        </ul>
+      </nav>
+      <main class="content">
+        <div class="main_questions">
+          <div class="search_bar">
+            <h1 class="title">Alguna pregunta</h1>
+            <input
+              type="text"
+              placeholder="Buscar pregunta"
+              class="search_question"
+              id="search_question"
+            />
+            <button type="submit" class="search_button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="question_box">
+            <ul class="preguntas" style="display: block">
+              <li id="pregunta_uno">
+                <button
+                  class="info_button"
+                  data-target="info_1"
+                  onclick="pregunta_active()"
+                >
+                  ¿Donde nos ubicamos?
+                </button>
+                <div id="info_1" class="contenido_pregunta">
+                  <p id="resp_1" class="contenido_respuesta">
+                      Nos ubicamos en el boulevard morazan de Tegucigalpa, en la Torre Centro Morazan en el piso C4. 
+                      Si desea una visita personalizada, por favor, haga clic en el link que le dejamos a continuacion para que vea nuestra ubicacion en google maps.
+                  </p>
+                  <a href="https://maps.app.goo.gl/D1jMDNJRh1v6nUte6" target="_blank" class="ubicacion">
+                    <i class="fas fa-map-marker-alt"></i> Ver en Google Maps
+                  </a>
+                </div>
+              </li>
+              <li id="pregunta_dos">
+                <button
+                  class="info_button"
+                  data-target="info_2"
+                  onclick="pregunta_active()"
+                >
+                 ¿Como agendar una cita?
+                </button>
+                <div id="info_2" class="contenido_pregunta">
+                  <p id="resp_2" class="contenido_respuesta2">
+                   <ol id="lista_cita">
+                    <li>Dirigete a seccion de <a href="agendarcita.html">agendar cita</a> en el menu de navegacion.</li>
+                    <li>Llena los campos que se solicitan</li>
+                    <li>Dar click en el boton de agendar</li>
+                    <li>¡Listo tu cita ha sido agendada.!</li>
+                   </ol>
+                   Cualquier duda porfavor escribenos a nuestro numero o si no contactanos a traves de nuestro instagram.
+                  </p>
+                </div>
+              </li>
+              <li id="pregunta_tres">
+                <button
+                  class="info_button"
+                  data-target="info_3"
+                  onclick="pregunta_active()"
+                >
+                 ¿Como los puedo contactar?
+                </button>
+                <div id="info_3" class="contenido_pregunta">
+                  <p id="resp_3" class="contenido_respuesta3">
+                  Si necesitas contactarnos puedes hacerlo a traves de nuestras redes sociales.
+                  A continuacion te dejamos los links para que puedas contactarnos.
+                  </p>
+                  <a href="https://www.instagram.com" target="_blank" class="social_icon_resp">
+                    <img
+                      src="imagenes/instalogo.jpg"
+                      alt="Instagram"
+                      class="social-icon-image_resp"
+                    />
+                  </a>
+                  <a href="https://wa.me/1234567890" target="_blank" class="social_icon_resp">
+                    <img
+                      src="imagenes/whatsapplogo.jpg"
+                      alt="WhatsApp"
+                      class="social-icon-image_resp"
+                    />
+                  </a>
+                </div>
+              </li>
+              <li id="pregunta_cuatro">
+                <button
+                  class="info_button"
+                  id="boton_4"
+                  data-target="info_4"
+                  onclick="pregunta_active()"
+                >
+                  ¿Que dias abren?
+                </button>
+                <div id="info_4" class="contenido_pregunta">
+                   <ul class="semana">
+                    <li class="dia">
+                      <h3>Lunes</h3>
+                      <p class="horario">10:00 am a 4:30pm</p>
+                    </li>
+                    <li class="dia">
+                      <h3>Martes</h3>
+                      <p class="horario">10:00 am a 4:30pm</p>
+                    </li>
+                    <li class="dia">
+                      <h3>Miercoles</h3>
+                      <p class="horario">10:00 am a 4:30pm</p>
+                    </li>
+                    <li class="dia">
+                      <h3>Jueves</h3>
+                      <p class="horario">10:00 am a 4:30pm</p>
+                    </li>
+                    <li class="dia">
+                      <h3>Viernes</h3>
+                      <p class="horario">10:00 am a 4:30pm</p>
+                    </li>
+                    <li class="dia">
+                      <h3>Sabado</h3>
+                      <p class="horario">10:00 am a 4:30pm</p>
+                    </li>
+                   </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+            <h3>Contáctanos</h3>
+            <a href="https://wa.me/1234567890" target="_blank">
+                <img src="imagenes/whatsapplogo.jpg" alt="WhatsApp" class="social-icon-image">
+            </a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Dirección</h3>
+            
+        </div>
+
+        
+        <div class="footer-column">
+            <h3>Síguenos</h3>
+            <a href="https://www.instagram.com/cyd.hn?igsh=dTdkejBpZ3lpcHNu" target="_blank">
+              <img src="imagenes/instalogo.jpg" alt="Instagram" class="social-icon-image">
+          </a>
+          
+          <a href="https://www.facebook.com" target="_blank">
+              <img src="imagenes/facelogo.jpg" alt="Facebook" class="social-icon-image">
+          </a>  
+        </div>
+    </div>
+    </footer>
+  </body>
+</html>
