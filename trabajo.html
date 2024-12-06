@@ -1,110 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>c&dHN</title>
-        <link rel="stylesheet" href="css/homepage.css" />
-        <link rel="stylesheet" href="css/trabajo.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <script src="js/homepage.js"></script>
-        <script src="js/trabajo.js"></script>
-
-    </head>
-
-    <body>
-            <header class="header">
-              <div class="logo">
-                <img src="imagenes/Cyd WS Logo Transparente.png" alt="Logo C&D" class="logo">
-               </div>
-
-              <nav class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>c&dHN</title>
+    <link rel="stylesheet" href="css/trabajo.css" />
+    <link rel="stylesheet" href="css/header_and_footer.css"/>
+    
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <img
+          src="imagenes/LOGO CYD.png"
+          alt="Logo C&D"
+          class="logo"
+        />
+      </div>
+    </header>
+    <div class="container">
+      <nav class="sidebar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#">Catálogo</a></li>
-          <li><a href="agendarcita.html">Agendar cita</a></li>
-          <li><a href="eventos.html">Actividades</a></li>
+          <li><a href="agendarcita.html">Agendar Cita</a></li>
+          <li><a href="actividades.html">Actividades</a></li>
           <li><a href="#">Reseñas</a></li>
-          <li><a href="#">Acerca de Nosotros</a></li>
-          <li><a href="trabajo">Trabaja con nosotros</a></li>
+          <li><a href="acercadenosotros.html">Acerca de Nosotros</a></li>
+          <li><a href="trabajo.html">Trabaja con Nosotros</a></li>
           <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
           <li><a href="contactanos.html">Contáctanos</a></li>
-          <li><a href="#">Ubicación</a></li>
-                </ul>      
-              </nav>
-            </header>
-            <main>
-                <section class="hero">
-                    <div class="hero-text">
-                        <h2>Únete a nuestro equipo</h2>
-                        <p>Estamos buscando personas apasionadas y motivadas para diversos roles. ¡Envíanos tu CV!</p>
-                    </div>
-                </section>
-
-                <section class="recruitment-form">
-                    <h2>Formulario de Reclutamiento</h2>
-                    <form id="recruitmentForm" action="#" method="POST" enctype="multipart/form-data">
-                        <label for="name">Nombre Completo</label>
-                        <input type="text" id="name" name="name" required>
-            
-                        <label for="email">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" required>
-            
-                        <label for="phone">Número de Teléfono</label>
-                        <input type="tel" id="phone" name="phone" required>
-            
-                        <label for="position">Posición Deseada</label>
-                        <select id="position" name="position">
-                            <option value="developer">Desarrollador</option>
-                            <option value="designer">Diseñador</option>
-                            <option value="manager">Gerente</option>
-                        </select>
-            
-                        <label for="cv">Cargar CV</label>
-                        <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx" required>
-            
-                        <button type="submit">Enviar Solicitud</button>
-                    </form>
-            
-                    <div id="confirmation-message" class="hidden">¡Tu solicitud ha sido enviada con éxito!</div>
-                </section>
-
-            </main>
-           
-            <footer>
-                <div class="footer-container">
-                    <div class="footer-column">
-                    <h3>Ayuda</h3>
-                        <ul>
-                            <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
-                            <li><a href="#">Información para Envíos</a></li>
-                        </ul>
-                    </div>
+          <li><a href="ubicacion.html">Ubicación</a></li>
+          
+        </ul>
+      </nav>
+      <main class="content">
+        <section class="recruitment-form">
+          <h2>Formulario de Reclutamiento</h2>
+          <form id="recruitmentForm" action="#" method="POST" enctype="multipart/form-data">
+              <label for="name">Nombre Completo</label>
+              <input type="text" id="name" name="name" required>
+  
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" name="email" required>
+  
+              <label for="phone">Número de Teléfono</label>
+              <input type="tel" id="phone" name="phone" required>
+  
+              <label for="position">Posición Deseada</label>
+              <select id="position" name="position">
+                  <option value="developer">Asesor de ventas</option>
+                  <option value="designer">Cajero</option>
+                  <option value="manager">Encargado de almacén</option>
+                  <option value="security">Personal de limpieza</option>
+                  <option value="socialmedia">Community manager</option>
+              </select>
+  
+              <label for="cv">Cargar CV</label>
+              <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx" required>
+  
+              <button type="submit">Enviar Solicitud</button>
+          </form>
+  
+          <div id="confirmation-message" class="hidden">¡Tu solicitud ha sido enviada con éxito!</div>
+      </section>       
+      </main>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contáctanos</h3>
+                <a href="https://wa.link/3sqldl" target="_blank">
+                    <img src="imagenes/whalog.png" alt="Icono de WhatsApp" class="social-icon-image">
+                </a>
+            </div>
     
-                    <div class="footer-column">
-                    <h3>Empresa</h3>
-                        <ul>
-                            <li><a href="#">Acerca de Nosotros</a></li>
-                            <li><a href="trabajo.html">Trabaja con Nosotros</a></li>
-                        </ul>
-                    </div>
+            <div class="footer-column">
+                <h3>Dirección</h3>
+                <a href="https://maps.app.goo.gl/D1jMDNJRh1v6nUte6" target="_blank" class="ubicacion"></a>
+                    <img src="imagenes/locationicon.png" alt="Icono de Ubicación" class="social-icon-image">
+                </a>
+                
+            </div>
     
             
-                    <div class="footer-column">
-                        <h3>Contáctenos</h3>
-                        <a href="https://www.instagram.com/cyd.hn?igsh=dTdkejBpZ3lpcHNu" target="_blank">
-                        <img src="imagenes/instalogo.jpg" alt="Instagram" class="social-icon-image">
-                        </a>
-
-                        <a href="https://wa.me/1234567890" target="_blank">
-                        <img src="imagenes/whatsapplogo.jpg" alt="WhatsApp" class="social-icon-image">
-                        </a>
-
-                        <a href="https://www.facebook.com" target="_blank">
-                        <img src="imagenes/facelogo.jpg" alt="Facebook" class="social-icon-image">
-                        </a>  
-                    </div>
-                </div>
-        </footer>
-    </body>
+            <div class="footer-column">
+                <h3>Síguenos</h3>
+                <a href="https://www.instagram.com/cyd.hn?igsh=dTdkejBpZ3lpcHNu" target="_blank">
+                  <img src="imagenes/instalog.png" alt="Icono de Instagram" class="social-icon-image">
+              </a>
+              
+              <a href="https://www.tiktok.com/@cyd.workstation?_t=8rxtFYSKetc&_r=1" target="_blank">
+                  <img src="imagenes/ttlog.png" alt="Icono de Tiktok" class="social-icon-image">
+              </a>  
+            </div>
+        </div>
+    </footer>
+    <script src="js/trabajo.js"></script>
+  </body>
 </html>
