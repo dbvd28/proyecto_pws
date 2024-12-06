@@ -1,4 +1,3 @@
-
 .content {
   display: flex;
   flex-direction: column;
@@ -150,39 +149,4 @@
 
 .hidden {
   display: none;
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%; 
-    height: auto; 
-  }
-
-  .content {
-    margin-left: 0;
-    width: 100%; 
-  }
-
-  .slider {
-    height: 50vh; 
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%; 
-  }
-
-  .content {
-    margin-left: 0;
-    width: 100%;
-  }
 }

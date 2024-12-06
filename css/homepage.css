@@ -5,14 +5,14 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Lora',serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #f9f9f9;
-  color: #333;
-  margin: 0;
-  padding: 0;
+    font-family: 'Lora', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0 10px;
 }
 
 .header {
@@ -374,62 +374,152 @@ footer {
     transform: scale(1.1);
 }
 
-
 /* Media Queries */
-
 @media (max-width: 720px) {
-
-    header{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    .header, .navbar, .homepage-section-catalog, .homepage-section-giveaway, .homepage-section-aboutus {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 10px;
     }
-    header nav ul {
-        flex-direction: row;
-        margin: 1rem;
-        width: 100%;
-    }
-
-    header nav ul li {
-        border: none;
-    }
-
-    .hero {
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: center;
-        height: 250px;
-    }
-
-    .hero-text {
-        padding: 1rem;
-    }
-
-    .hero h1 {
-        font-size: 22px;
-    }
-
-    .hero p {
-        font-size: 14px;
-    }
-
-    
-    .search-bar input {
-        width: 90%; 
-    }
-
-    .search-bar button {
-        width: 90%;
-    }
-
   
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
+    header nav ul {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
     }
+  
+    .menu {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .homepage-section-catalog,
+    .homepage-section-giveaway,
+    .homepage-section-aboutus {
+      padding: 30px 10px;
+      text-align: center;
+    }
+  
+    .text-content-catalog,
+    .text-content-giveaway,
+    .text-content-aboutus {
+      max-width: 100%;
+    }
+  
+    .image-content-catalog,
+    .video-content-aboutus {
+      transform: translateX(0);
+      margin-bottom: 20px;
+    }
+  
+    .button-catalog,
+    .button-giveaway,
+    .button-aboutus {
+      width: 100%;
+      text-align: center;
+    }
+  
+    footer {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 720px) {
+    .homepage-section-catalog,
+    .homepage-section-giveaway,
+    .homepage-section-aboutus {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-content-catalog,
+    .video-content-aboutus,
+    .image-container-giveaway {
+      order: 1; 
+      transform: none;
+      margin-bottom: 20px;
+    }
+  
+    .text-content-catalog,
+    .text-content-giveaway,
+    .text-content-aboutus {
+      order: 2; 
+      text-align: center;
+      max-width: 100%;
+    }
+  
+    .button-catalog,
+    .button-giveaway,
+    .button-aboutus {
+      order: 3; 
+      width: auto; 
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  
 
-    .footer-column {
-        text-align: center;
-        margin-bottom: 1rem;
+  @media (min-width: 720px) and (max-width: 1024px) {
+    .homepage-section-catalog,
+    .homepage-section-giveaway,
+    .homepage-section-aboutus {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
     }
-}
+  
+    .image-content-catalog,
+    .video-content-aboutus,
+    .image-container-giveaway {
+      order: 1; 
+      transform: none;
+      margin-bottom: 20px;
+    }
+  
+    .text-content-catalog,
+    .text-content-giveaway,
+    .text-content-aboutus {
+      order: 2; 
+      text-align: center;
+      max-width: 80%;
+    }
+  
+    .button-catalog,
+    .button-giveaway,
+    .button-aboutus {
+      order: 3; 
+      width: auto; 
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  
+
+  @media (min-width: 1024px) {
+    .homepage-section-catalog,
+    .homepage-section-giveaway,
+    .homepage-section-aboutus {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 50px;
+    }
+  
+    .image-content-catalog,
+    .video-content-aboutus,
+    .image-container-giveaway {
+      transform: translateX(-30px); 
+    }
+  
+    .text-content-catalog,
+    .text-content-giveaway,
+    .text-content-aboutus {
+      max-width: 50%;
+    }
+  
+    .button-catalog,
+    .button-giveaway,
+    .button-aboutus {
+      width: auto; 
+    }
+  }
