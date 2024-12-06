@@ -5,7 +5,12 @@
   background-color: white;
   overflow-y: auto;
 }
+.container{
+  display: flex;
+  flex-direction: column;
+}
 /*Questions*/
+
 .contenido_pregunta {
   display: none;
   margin: 2px;
@@ -19,7 +24,7 @@
   margin-right: 2px;
  
 }
-.ubicacion {
+.ubicacion_resp {
   position: relative;
   display: flex;
   align-items: center;
@@ -38,12 +43,12 @@
   transform: translateX(-50%);
 }
 
-.ubicacion i {
+.ubicacion_resp i {
   margin-right: 8px;
   font-size: 20px; 
 }
 
-.ubicacion:hover {
+.ubicacion_resp:hover {
   background-color: #e6e6e6;
   color: #0056b3;
   border-color: #0056b3; 
@@ -79,6 +84,10 @@ padding-left: 20px;
   width: 40px;
   height: 40px;
   margin: 5px 0;
+  background-color: #0056b3;
+  border-radius: 50%;
+  align-items: center;
+  object-position: center center;
   transition: transform 0.3s ease;
 }
 
@@ -90,16 +99,11 @@ padding-left: 20px;
   width: 40px;
   height: 40px;
   margin: 5px 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
-  border-radius: 50%; 
-  background: linear-gradient(135deg, #555, #333); 
-  padding: 0px; 
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+  transition: transform 0.3s ease;
 }
 
 .social-icon-image_resp:hover {
-  transform: scale(1.1); 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
 }
 .semana{
   justify-content: center;
@@ -152,9 +156,9 @@ padding-left: 20px;
     transition: background-color 0.3s ease;
     font-size: 16px; 
 }
-.search_bar .title {
+.main_questions .title {
   position: relative;
-  margin: 0px 0px 12px;
+  margin:  12px;
   padding: 1rem;
   border-radius: 17px;
   font-size: 1rem;
@@ -162,37 +166,10 @@ padding-left: 20px;
   display: inline-block;
   background-color: #dfdbdb;
   left: 50%;
+  width: fit-content;
   transform: translateX(-50%);
 }
-.search_bar .search_question {
-  padding: 1.5rem;
-  margin: 5px 0px 3px;
-  border-radius: 6px;
-  display: inline-block;
-  border: 1px solid rgb(207, 215, 223);
-  width: 73vw;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 5px 8px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 8px 0px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  height: 30px;
-}
-.search_bar .search_button {
-  font-size: 1.125rem;
-  align-self: center;
-  position: absolute;
-  right: 15px;
-  top: 70px;
-  background: rgb(100, 122, 142);
-  margin: 6px;
-  padding: 0px 8px;
-  border-radius: 4px;
-  height: 32px;
-  width: 32px;
-  outline: none;
-  border: none;
-  align-content: center;
-}
+
 .question_box {
   margin: 0px;
   padding: 0px;
@@ -232,7 +209,10 @@ padding-left: 20px;
   padding: 0px;
   justify-content: center center;
 }
-
+#boton_4{
+justify-content: start;
+align-items: start;
+}
 
 
 @media (min-width: 720px) {
@@ -253,13 +233,6 @@ padding-left: 20px;
     width: 20%;
     height: auto;
   }
-  .search_bar .search_question{
-    display: flex;
-    flex-direction: column;
-  }
-  .search_bar .search_question{
-    max-width: 530px;
-  }
   .question_box ul li button {
     max-width: 520px;
   }
@@ -270,7 +243,7 @@ padding-left: 20px;
   #info_3 :nth-child(3){
     position: relative;
     bottom: 40px;
-    left: 225px;
+    left: 180px;
   }
   .semana{
     display: flex;
@@ -316,27 +289,15 @@ padding-left: 20px;
 
 /* Para pantallas grandes (escritorios) */
 @media (min-width: 1024px) {
-  .search_bar .title {
+  .main_questions .title {
     font-size: larger;
     padding: 1rem;
   }
-  .search_bar .search_question {
-   height: 8vh;
-    right: 80px;
-    top: 75px;
-    max-width: 800px;
-    font-size: larger;
-  }
-  .search_bar .search_button {
-    position: absolute;
-    padding: 1.2rem;
-    right: 3px;
-    top: 71px;
-  }
+ 
   #info_3 :nth-child(3){
     position: relative;
     bottom: 40px;
-    left: 240px;
+    left: 220px;
     padding: 0;
   }
   .question_box ul {
@@ -402,6 +363,16 @@ left: 0%;
     justify-content: space-between;
 }
 
+#lista_cita{
+  list-style-type:decimal;
+  padding-left: 20px;
+  }
+  #lista_cita li{
+    margin: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+
 .footer-column {
     width: 30%;
 }
@@ -416,18 +387,25 @@ left: 0%;
 }
 }
 @media (min-width: 1440px) {
-    .search_bar .search_question {
-       width: 100vw;
+  #lista_cita{
+    margin: 10px;
+    list-style-type:decimal;
+    padding-left: 20px;
     }
-    .search_bar .search_button {
-        padding: 1rem;
-        right: 345px;
-        top:77px;
+    #lista_cita li{
+      margin: 10px;
+      font-size: 16px;
+      color: #333;
     }
+    #boton_4{
+      align-items: center;
+      justify-content: center;
+    }
+   
     #info_3 :nth-child(3){
       position: relative;
       bottom: 40px;
-      left: 380px;
+      left: 400px;
     }
     .dia{
       width:200px;
