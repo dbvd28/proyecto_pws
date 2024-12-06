@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     aboutUsButton.addEventListener("click", function() {
-        window.location.href = "aboutus.html"; 
+        window.location.href = "acercadenosotros.html"; 
     });
 });
