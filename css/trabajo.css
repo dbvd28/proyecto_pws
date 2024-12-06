@@ -1,198 +1,99 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Montserrat', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    height: 60px;
-    width: auto;
-}
-
-.search-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-#search-bar {
-    padding: 5px;
-    border: 2px solid black;
-    border-radius: 4px;
-    font-size: 14px;
-    outline: none;
-}
-
-#search-button {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: white;
-    color: #0078d7;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-    font-size: 16px; 
-
-}
-
-#search-button .fas {
-    font-size: 20px; 
-}
-
-#search-button:hover {
-    background-color: #e6e6e6;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    height: calc(100vh - 60px); 
-}
-.sidebar {
-    width: 100vw;
-    background-color: #fff;
-    padding: 20px 0;
-    color: #000;
-    transition: transform 0.3s ease-in-out;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin: 10px 0;
-}
-
-.sidebar ul li a {
-  color: #000;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: block;
-  transition: background-color 0.3s ease;
-}
-
-.sidebar ul li a:hover {
-  background-color: #34495e;
-}
 
 .content {
-  flex: 1;
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   background-color: white;
   overflow-y: auto;
 }
 
-/* Footer */
-footer {
-  background-color: #2c3e50;
-  color: white;
-  padding: 40px 20px;
-  font-size: 14px;
+.recruitment-form {
   width: 100%;
-  position: relative;
+  max-width: 600px; 
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.footer-column {
-  flex: 1;
-  min-width: 200px;
-  padding: 10px;
+.recruitment-form h2 {
   text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #02032e;
 }
 
-.footer-column h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: #fff;
-}
-
-.footer-column ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer-column ul li {
-  margin: 10px 0;
-}
-
-.footer-column ul li a {
-  color: #ecf0f1;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-column ul li a:hover {
-  color: #3498db;
-}
-
-.social-links {
+.recruitment-form form {
   display: flex;
+  flex-direction: column;
   gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
-.social-icon {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
+.recruitment-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #02032e;
 }
 
-.social-icon:hover {
-  color: #3498db;
+.recruitment-form input[type="text"],
+.recruitment-form input[type="email"],
+.recruitment-form input[type="tel"],
+.recruitment-form select,
+.recruitment-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
-.social-icon-image {
-  width: 40px;
-  height: 40px;
-  margin: 5px 0;
-  transition: transform 0.3s ease;
+.recruitment-form button {
+  background-color: #380000;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.social-icon-image:hover {
-  transform: scale(1.1);
+.recruitment-form button:hover {
+  background-color: #e6e6e6;
 }
 
+#confirmation-message {
+  margin-top: 15px;
+  text-align: center;
+  color: green;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .recruitment-form {
+    max-width: 100%;
+  }
+}
