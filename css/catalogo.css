@@ -137,10 +137,7 @@ header nav ul li a:hover {
 }
 
 /* Contenido */
-.content {
-    margin-top: 3rem;
-    padding: 2rem;
-}
+
 
 .category-section {
     margin-bottom: 3rem;
@@ -232,7 +229,16 @@ footer {
 .social-icon-image:hover {
     transform: scale(1.1);
 }
-
+.content {
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+    margin-top: 100px;
+}
+.container{
+    width: 100vw;
+    height: fit-content;
+}
 @media (min-width: 720px) and (max-width: 1024px) {
     /* Ajustes para pantallas de tablets */
     .header, .navbar {
