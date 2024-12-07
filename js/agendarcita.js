@@ -43,9 +43,9 @@ function setupLoadingScreen() {
         return false;
       }
 
-      if (telefono.trim() !== "") {
+      if (number.trim() !== "") {
         var telefonoRegex = /^[0-9]{10}$/; // Verifica que tenga exactamente 10 dígitos
-        if (!telefonoRegex.test(telefono)) {
+        if (!telefonoRegex.test(number)) {
           alert(
             "Por favor ingresa un número de teléfono válido (solo números, 10 dígitos)."
           );
