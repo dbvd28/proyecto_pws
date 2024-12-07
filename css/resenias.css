@@ -1,5 +1,22 @@
 
-
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    overflow-y: auto;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar{
+    display: block;
+    height: fit-content;
+    width: 100vw;
+  }
+  .reviews-section{
+    height:50vh;
+  }
 .star {
     font-size: 24px;
     color: #ccc; 
@@ -121,6 +138,7 @@
 
 
 .reviews-section {
+    height: fit-content;
     flex: 1;
     padding: 20px;
     background-color: #fff;
@@ -274,7 +292,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 720px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
@@ -302,22 +320,24 @@
     .search-container #search-button {
         font-size: 14px;
     }
-
+    .reviews-section{
+        width: 80vw;
+        height: fit-content;
+        position: relative;
+    }
     .sidebar {
         width: 100%;
-        position: absolute;
+        position: relative;
+        display: block;
         top: 0;
         left: 0;
         right: 0;
         background-color: #fff;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        transform: translateX(-100%);
         transition: transform 0.3s ease-in-out;
     }
 
-    .sidebar.active {
-        transform: translateX(0);
-    }
+
 
     .sidebar ul li a {
         padding: 10px;
@@ -325,6 +345,7 @@
     }
 
     .container {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
     }
 }
